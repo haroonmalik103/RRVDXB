@@ -1,24 +1,26 @@
 function Categories() {
   const categories = [
-    "Men Watches",
-    "Women Watches",
-    "Smart Watches",
-    "Luxury Watches",
+    "Men",
+    "Women",
+    "Watches",
+    "Electronics",
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="max-w-7xl mx-auto py-16 px-6">
       <h2 className="text-4xl font-bold text-center mb-10">
-        Featured Categories
+        Shop by Categories
       </h2>
 
-      <div className="grid grid-cols-4 gap-8 px-10">
-        {categories.map((category, index) => (
+      <div className="grid grid-cols-4 gap-6">
+        {categories.map((category) => (
           <div
-            key={index}
-            className="bg-gray-100 rounded-xl p-10 text-center shadow hover:shadow-lg cursor-pointer"
+            key={category}
+            className="bg-gray-100 p-10 rounded-xl text-center shadow hover:shadow-lg cursor-pointer"
           >
-            <h3 className="text-xl font-semibold">{category}</h3>
+            <h3 className="text-2xl font-semibold">
+              {category}
+            </h3>
           </div>
         ))}
       </div>

@@ -1,24 +1,24 @@
 function Brands() {
   const brands = [
-    "Rolex",
-    "Casio",
+    "Nike",
+    "Adidas",
     "Apple",
-    "Fossil",
-    "Seiko",
-    "Richard Mille",
+    "Samsung",
+    "Rolex",
+    "Gucci",
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="max-w-7xl mx-auto py-16 px-6">
       <h2 className="text-4xl font-bold text-center mb-10">
-        Popular Brands
+        Top Brands
       </h2>
 
-      <div className="flex justify-center gap-8 flex-wrap">
-        {brands.map((brand, index) => (
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+        {brands.map((brand) => (
           <div
-            key={index}
-            className="w-40 h-24 bg-gray-100 rounded-lg shadow flex items-center justify-center text-xl font-bold hover:bg-green-500 hover:text-white transition"
+            key={brand}
+            className="border rounded-lg p-6 text-center font-semibold shadow hover:shadow-lg hover:bg-red-600 hover:text-white transition"
           >
             {brand}
           </div>
