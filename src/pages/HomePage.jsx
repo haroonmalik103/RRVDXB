@@ -1,8 +1,8 @@
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/home/Hero";
-import Categories from "../components/home/Categories";
 import FeaturedProducts from "../components/home/FeaturedProducts";
 import Brands from "../components/home/Brands";
+import Footer from "../components/layout/Footer";
 
 function HomePage({ addToCart, cartCount }) {
   return (
@@ -11,11 +11,11 @@ function HomePage({ addToCart, cartCount }) {
 
       <Hero />
 
-      <Categories />
-
       <FeaturedProducts addToCart={addToCart} />
 
       <Brands />
+
+      <Footer/>
     </div>
   );
 }
